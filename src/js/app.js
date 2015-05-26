@@ -70,8 +70,8 @@ define(
             });
 
             objImmerse.arrIntroButton.click(function (e) {
-                objImmerse.arrIntro.addClass("hidden");
-                objImmerse.arrSpellingContainer.removeClass("hidden");
+                objImmerse.arrIntro.addClass("hide");
+                objImmerse.arrSpellingContainer.removeClass("hide");
                 objImmerse.setUpQuestion(0);
             });
             objImmerse.arrCheckButton.on("click", function (event) {
@@ -197,8 +197,8 @@ define(
             }
             objImmerse.arrNumber.html(strWordNum);
             objImmerse.arrSpellingForm[0].value = "";
-            objImmerse.arrSpellingContainer.removeClass("hidden");
-            objImmerse.arrCorrect.addClass("hidden");
+            objImmerse.arrSpellingContainer.removeClass("hide");
+            objImmerse.arrCorrect.addClass("hide");
         };
 
         objImmerse.checkAnswer = function () {
@@ -235,8 +235,8 @@ define(
             objImmerse.arrCorrect.find(".fbshare").attr({"href": "https://www.facebook.com/dialog/feed?display=popup&app_id=215046668549694&link=" + encodeURIComponent(strPageURL) + "&picture=" + strPageURL.substr(0, strPageURL.lastIndexOf("/") + 1) + "img/fb-post.jpg&name=" + encodeURIComponent(strShareHead) + "&description=" + encodeURIComponent(strShareChatter) + "&redirect_uri=http://" + window.location.hostname + "/pages/interactives/fb-share/"});
             objImmerse.arrCorrect.find(".tshare").attr({"href": "https://twitter.com/intent/tweet?url=" + encodeURIComponent(strTwitterURL) + "&text=" + encodeURIComponent(strShareChatter) + "&via=usatoday'"});
             objImmerse.arrCorrect.find(".eshare").attr({"href": "mailto:?body=" + strShareChatter + " %0d%0d " + encodeURIComponent(strPageURL) + "&subject=" + strShareHead});
-            objImmerse.arrSpellingContainer.addClass("hidden");
-            objImmerse.arrCorrect.removeClass("hidden");
+            objImmerse.arrSpellingContainer.addClass("hide");
+            objImmerse.arrCorrect.removeClass("hide");
         };
 
         objImmerse.audioPlayClip = function (intAudio) {

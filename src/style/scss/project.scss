@@ -99,7 +99,7 @@ body {
 	top: 25%;
 	width: 90%;
 	z-index: 5;
-    transition: all .5s ease;
+    transition: transform .5s ease;
 }
 
 
@@ -205,9 +205,8 @@ body {
 textarea, input { outline: none; }
 
 
-.section.hidden {
+.section.hide {
     transform: translate(0, 400%);
-    transition: all .5s ease;
 }
 
 .word-input:focus {
@@ -474,6 +473,7 @@ html.touch .next-button {
 
 @media (min-width: 1100px) {
 	.section {
+        left: 10%;
 		width: 80%;
     }
 }
