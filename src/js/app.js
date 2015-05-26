@@ -49,7 +49,7 @@ define(
         objImmerse.totalWords = 7;
         objImmerse.numCorrect = 0;
         objImmerse.numWindowWidth = window.innerWidth;
-        objImmerse.arrWords = ["appoggiatura", "autochthonous", "demarche", "guerdon", "knaidel", "laodicean", "pococurante", "prospicience", "stromuhr", "succedaneum", "ursprache"];
+        objImmerse.arrWords = ["planet", "haven", "banjo", "nostalgia", "tussle", "molecule", "vineyard", "whey", "knead", "binoculars", "hydroponic", "appoggiatura", "autochthonous", "demarche", "guerdon", "knaidel", "laodicean", "pococurante", "prospicience", "stromuhr", "succedaneum", "ursprache"];
 
         objImmerse.reformatPage = function () {
             objImmerse.numWindowWidth = window.innerWidth;
@@ -125,9 +125,9 @@ define(
                     case 0:
                         jQuery.each(arrSources, function (sourceIndex) {
                             if (sourceIndex === 0) {
-                                arrSources.eq(sourceIndex).attr({"src": "http://usatoday30.usatoday.com/exp/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-word.mp3", "type": "audio/mpeg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
+                                arrSources.eq(sourceIndex).attr({"src": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-word.mp3", "type": "audio/mpeg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
                             } else {
-                                arrSources.eq(sourceIndex).attr({"src": "http://usatoday30.usatoday.com/exp/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-word.ogg", "type": "audio/ogg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
+                                arrSources.eq(sourceIndex).attr({"src": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-word.ogg", "type": "audio/ogg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
                             }
                         });
                         objImmerse.arrAudios.eq(index).load();
@@ -135,9 +135,9 @@ define(
                     case 1:
                         jQuery.each(arrSources, function (sourceIndex) {
                             if (sourceIndex === 0) {
-                                arrSources.eq(sourceIndex).attr({"src": "http://usatoday30.usatoday.com/exp/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-definition.mp3", "type": "audio/mpeg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
+                                arrSources.eq(sourceIndex).attr({"src": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-definition.mp3", "type": "audio/mpeg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
                             } else {
-                                arrSources.eq(sourceIndex).attr({"src": "http://usatoday30.usatoday.com/exp/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-definition.ogg", "type": "audio/ogg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
+                                arrSources.eq(sourceIndex).attr({"src": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-definition.ogg", "type": "audio/ogg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
                             }
                         });
                         objImmerse.arrAudios.eq(index).load();
@@ -145,9 +145,9 @@ define(
                     case 2:
                         jQuery.each(arrSources, function (sourceIndex) {
                             if (sourceIndex === 0) {
-                                arrSources.eq(sourceIndex).attr({"src": "http://usatoday30.usatoday.com/exp/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-origin.mp3", "type": "audio/mpeg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
+                                arrSources.eq(sourceIndex).attr({"src": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-origin.mp3", "type": "audio/mpeg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
                             } else {
-                                arrSources.eq(sourceIndex).attr({"src": "http://usatoday30.usatoday.com/exp/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-origin.ogg", "type": "audio/ogg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
+                                arrSources.eq(sourceIndex).attr({"src": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-origin.ogg", "type": "audio/ogg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
                             }
                         });
                         objImmerse.arrAudios.eq(index).load();
@@ -155,9 +155,9 @@ define(
                     case 3:
                         jQuery.each(arrSources, function (sourceIndex) {
                             if (sourceIndex === 0) {
-                                arrSources.eq(sourceIndex).attr({"src": "http://usatoday30.usatoday.com/exp/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-sentence.mp3", "type": "audio/mpeg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
+                                arrSources.eq(sourceIndex).attr({"src": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-sentence.mp3", "type": "audio/mpeg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
                             } else {
-                                arrSources.eq(sourceIndex).attr({"src": "http://usatoday30.usatoday.com/exp/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-sentence.ogg", "type": "audio/ogg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
+                                arrSources.eq(sourceIndex).attr({"src": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/spelling-bee/media/audio/" + objImmerse.arrWords[intWord] + "-sentence.ogg", "type": "audio/ogg"}).detach().appendTo(objImmerse.arrAudios.eq(index));
                             }
                         });
                         objImmerse.arrAudios.eq(index).load();
