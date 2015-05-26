@@ -215,13 +215,13 @@ define(
                 objImmerse.arrCorrect.find("h2").html("Correct!");
                 objImmerse.arrCorrect.removeClass("wrong");
                 objImmerse.setVideos(2);
-                strShareChatter = "I got it right! Think you could spell any of the winning words from previous National Spelling Bees?";
+                strShareChatter = "I got it right! Think you could spell any of the words from previous National Spelling Bees?";
                 objImmerse.numCorrect = objImmerse.numCorrect + 1;
             } else {
                 objImmerse.arrCorrect.find("h2").html("Wrong!");
                 objImmerse.arrCorrect.addClass("wrong");
                 objImmerse.setVideos(3);
-                strShareChatter = "This is hard! Think you could spell any of the winning words from previous National Spelling Bees?";
+                strShareChatter = "This is hard! Think you could spell any of the words from previous National Spelling Bees?";
             }
             if (objImmerse.currentWord >= objImmerse.totalWords - 1) {
                 objImmerse.arrCorrect.find("h2").after("<h3>You got " + objImmerse.numCorrect + " out of " + objImmerse.totalWords + " correct.</h3>");
