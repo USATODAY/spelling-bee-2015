@@ -95,13 +95,11 @@ body {
 	/*background-color: white;*/
 	left: 5%;
 	position: absolute;
+    transform: translate(0, 0);
 	top: 25%;
 	width: 90%;
 	z-index: 5;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 }
 
 
@@ -135,19 +133,13 @@ body {
 	color: #000000;
 	font-size: 1.5em;
 	margin: 0 1%;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 	width: 30%;
 }
 
 .audio-button:hover {
 	background-color: rgba(255, 255, 255, 1);
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 }
 
 .button {
@@ -167,20 +159,14 @@ body {
 	display: block;
 	font-size: 2em;
 	margin: 1em auto;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 	width: 6em;
 }
 
 .large-button:hover {
 	background: rgba(255, 255, 255, 1);
 	color: #009bff;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 }
 
 .word-button {
@@ -189,20 +175,14 @@ body {
 	display: block;
 	font-size: 2em;
 	margin: 1em auto;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 	width: 17em;
 }
 
 .word-button:hover {
 	background: rgba(255, 255, 255, 1);
 	color: #009bff;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 }
 
 .word-input {
@@ -217,10 +197,7 @@ body {
 	max-width: 13em;
 	padding: .25em;
 	text-transform: uppercase;
-	-webkit-transition:border .5s;
-	-moz-transition:border .5s;
-	-o-transition:border .5s;
-    transition:border .5s;
+    transition: border .5s ease;
     text-align: center;
 	width: 100%;
 }
@@ -229,18 +206,12 @@ textarea, input { outline: none; }
 
 
 .section.hidden {
-	top: 200% !important;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transform: translate(0, 400%);
+    transition: all .5s ease;
 }
 
 .word-input:focus {
-	-webkit-transition:border .5s;
-	-moz-transition:border .5s;
-	-o-transition:border .5s;
-    transition:border .5s;
+    transition: border .5s ease;
     border: solid 4px #009bff;
 }
 
@@ -273,10 +244,7 @@ textarea, input { outline: none; }
 	font-size: 2em;
 	float: left;
 	margin-right: .5em;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 	width: 10em;
 }
 
@@ -287,10 +255,7 @@ textarea, input { outline: none; }
 .spelling-button:hover {
 	background: rgba(255, 255, 255, 1);
 	color: #009bff;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 }
 
 
@@ -300,10 +265,7 @@ textarea, input { outline: none; }
 	display: none;
 	font-size: 2em;
 	float: right;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 	width: 10em;
 }
 
@@ -318,10 +280,7 @@ textarea, input { outline: none; }
 .next-button:hover{
 	background: rgba(255, 255, 255, 1);
 	color: #009bff;
-	-webkit-transition:all .5s;
-	-moz-transition:all .5s;
-	-o-transition:all .5s;
-    transition:all .5s;
+    transition: all .5s ease;
 }
 
 .correct.wrong .result-buttons {
