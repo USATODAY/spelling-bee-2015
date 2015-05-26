@@ -259,7 +259,7 @@ module.exports = function(grunt) {
             src: ['**/*'],
             dest: '<%=config.build%>',
             filter: 'isFile'
-          },
+          }
         ]
       },
       deploy: {
@@ -297,17 +297,17 @@ module.exports = function(grunt) {
       },
       upload1: {
         files: {
-          '/17200/experiments/usatoday/2015/05/spelling-bee-2015/': 'js/main.js'
+          '/17200/experiments/usatoday/2015/05/spelling-bee/': 'js/main.js'
         }
       },
       upload2: {
         files: {
-          '/17200/experiments/usatoday/2015/05/spelling-bee-2015/': 'style/project.css'
+          '/17200/experiments/usatoday/2015/05/spelling-bee/': 'style/project.css'
         }
       },
       upload3: {
         files: {
-          '/17200/experiments/usatoday/2015/05/spelling-bee-2015/': 'data/*.json'
+          //'/17200/experiments/usatoday/2015/05/spelling-bee/': 'data/*.json'
         }
       }
     },

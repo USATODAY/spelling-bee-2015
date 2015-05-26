@@ -106,6 +106,14 @@ define(
             objImmerse.arrSpellingButton.click(function (e) {
                 objImmerse.arrCorrect.find("h2").html(objImmerse.arrWords[objImmerse.currentWord]);
             });
+            objImmerse.arrCorrect.find(".fbshare").click(function (e) {
+                e.preventDefault();
+                objImmerse.windowPopup(e.currentTarget.href, 500, 300);
+            });
+            objImmerse.arrCorrect.find(".tshare").click(function (e) {
+                e.preventDefault();
+                objImmerse.windowPopup(e.currentTarget.href, 500, 300);
+            });
             objImmerse.setVideos(0);
         };
 
@@ -224,8 +232,8 @@ define(
             strShareHead = "Winning Words";
             strShareHead = strShareHead.replace(/'/gi, "\\'");
             strShareChatter = strShareChatter.replace(/'/gi, "\\'");
-            objImmerse.arrCorrect.find(".fbshare").attr({"href": "javascript: var sTop=window.screen.height/2-(218);var sLeft=window.screen.width/2-(313);window.open('https://www.facebook.com/dialog/feed?display=popup&app_id=215046668549694&link=" + encodeURIComponent(strPageURL) + "&picture=" + strPageURL.substr(0, strPageURL.lastIndexOf("/") + 1) + "img/fb-post.jpg&name=" + encodeURIComponent(strShareHead) + "&description=" + encodeURIComponent(strShareChatter) + "&redirect_uri=http://usatoday30.usatoday.com/_common/_dialogs/fb-share-done.html','sharer','toolbar=0,status=0,width=580,height=400,top='+sTop+',left='+sLeft);Analytics.trackEvent('Facebook share');void(0);"});
-            objImmerse.arrCorrect.find(".tshare").attr({"href": "javascript: window.open('https://twitter.com/intent/tweet?url=" + encodeURIComponent(strTwitterURL) + "&text=" + encodeURIComponent(strShareChatter) + "&via=usatoday', 'twitterwindow', 'height=450, width=550, top=200, left=200, toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');Analytics.trackEvent('Twitter share');void(0);"});
+            objImmerse.arrCorrect.find(".fbshare").attr({"href": "https://www.facebook.com/dialog/feed?display=popup&app_id=215046668549694&link=" + encodeURIComponent(strPageURL) + "&picture=" + strPageURL.substr(0, strPageURL.lastIndexOf("/") + 1) + "img/fb-post.jpg&name=" + encodeURIComponent(strShareHead) + "&description=" + encodeURIComponent(strShareChatter) + "&redirect_uri=http://" + window.location.hostname + "/pages/interactives/fb-share/"});
+            objImmerse.arrCorrect.find(".tshare").attr({"href": "https://twitter.com/intent/tweet?url=" + encodeURIComponent(strTwitterURL) + "&text=" + encodeURIComponent(strShareChatter) + "&via=usatoday'"});
             objImmerse.arrCorrect.find(".eshare").attr({"href": "mailto:?body=" + strShareChatter + " %0d%0d " + encodeURIComponent(strPageURL) + "&subject=" + strShareHead});
             objImmerse.arrSpellingContainer.addClass("hidden");
             objImmerse.arrCorrect.removeClass("hidden");
@@ -236,7 +244,7 @@ define(
                 objImmerse.arrAudios[objImmerse.currentAudio].pause();
             }
             //if ((Modernizr.touch) || (jQuery.browser.mobile)) {
-                objImmerse.arrAudios[intAudio].load();
+            objImmerse.arrAudios[intAudio].load();
             //}
             objImmerse.arrAudios[intAudio].play();
             objImmerse.currentAudio = intAudio;
@@ -272,6 +280,20 @@ define(
 
             return array;
         };
+
+        objImmerse.windowPopup = function (url, width, height) {
+            // Calculate the position of the popup so
+            // it’s centered on the screen.
+            var left = (screen.width / 2) - (width / 2),
+                top = (screen.height / 2) - (height / 2);
+
+            window.open(
+                url,
+                "",
+                "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
+            );
+        };
+
         return objImmerse;
 
     });
