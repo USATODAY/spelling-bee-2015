@@ -225,7 +225,7 @@ define(
             }
             if (objImmerse.currentWord >= objImmerse.totalWords - 1) {
                 objImmerse.arrCorrect.find("h2").after("<h3>You got " + objImmerse.numCorrect + " out of " + objImmerse.totalWords + " correct.</h3>");
-                strShareChatter = "I got " + objImmerse.numCorrect + " out of " + objImmerse.totalWords + ' correct on the 2015 USA TODAY Spelling Bee. Can you do better?';
+                strShareChatter = "I got " + objImmerse.numCorrect + " out of " + objImmerse.totalWords + " correct on the 2015 USA TODAY Spelling Bee. Can you do better?";
                 objImmerse.arrNextButton.html("Start Over");
             }
             //objImmerse.arrNextButton.removeClass("show");
