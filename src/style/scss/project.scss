@@ -6,9 +6,16 @@
 @import "card";
 @import "buttons";
 
+/* Static Page fixes
+    ================================---------- */
+
+section.contents, article.padded-container, .non-article-content {
+    height: 100% !important;
+}
+
 /* Global Layout Styles
    ========================================================================== */
-* {
+article * {
    -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
    -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
     box-sizing:        border-box;   /* Everything else */
@@ -466,6 +473,7 @@ html.touch .next-button {
 
 	html.touch .page-container {
 		background-image: none;
+        background-color: black;
 	}
 
 	.next-button, .spelling-button {
