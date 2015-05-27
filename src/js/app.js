@@ -225,7 +225,7 @@ define(
             }
             if (objImmerse.currentWord >= objImmerse.totalWords - 1) {
                 objImmerse.arrCorrect.find("h2").after("<h3>You got " + objImmerse.numCorrect + " out of " + objImmerse.totalWords + " correct.</h3>");
-                strShareChatter = "I got " + objImmerse.numCorrect + " out of " + objImmerse.totalWords + " correct. Can you do better?";
+                strShareChatter = "I got " + objImmerse.numCorrect + " out of " + objImmerse.totalWords + " correct on USA TODAY's Spelling Bee. Can you do better?";
                 objImmerse.arrNextButton.html("Start Over");
             }
             //objImmerse.arrNextButton.removeClass("show");
@@ -233,7 +233,7 @@ define(
             strShareHead = strShareHead.replace(/'/gi, "\\'");
             strShareChatter = strShareChatter.replace(/'/gi, "\\'");
             objImmerse.arrCorrect.find(".fbshare").attr({"href": "https://www.facebook.com/dialog/feed?display=popup&app_id=215046668549694&link=" + encodeURIComponent(strPageURL) + "&picture=" + strPageURL.substr(0, strPageURL.lastIndexOf("/") + 1) + "img/fb-post.jpg&name=" + encodeURIComponent(strShareHead) + "&description=" + encodeURIComponent(strShareChatter) + "&redirect_uri=http://" + window.location.hostname + "/pages/interactives/fb-share/"});
-            objImmerse.arrCorrect.find(".tshare").attr({"href": "https://twitter.com/intent/tweet?url=" + encodeURIComponent(strTwitterURL) + "&text=" + encodeURIComponent(strShareChatter) + "&via=usatoday'"});
+            objImmerse.arrCorrect.find(".tshare").attr({"href": "https://twitter.com/intent/tweet?url=" + encodeURIComponent(strTwitterURL) + "&text=" + encodeURIComponent(strShareChatter) + "&via=usatoday"});
             objImmerse.arrCorrect.find(".eshare").attr({"href": "mailto:?body=" + strShareChatter + " %0d%0d " + encodeURIComponent(strPageURL) + "&subject=" + strShareHead});
             objImmerse.arrSpellingContainer.addClass("hide");
             objImmerse.arrCorrect.removeClass("hide");
