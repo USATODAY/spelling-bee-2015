@@ -58,7 +58,8 @@ docs/_build/
 **/.sass-cache/
 **/bower_components
 **/.tmp
-
+src/img
+src/media
 deps/
 node_modules/
 *.py[cod]
